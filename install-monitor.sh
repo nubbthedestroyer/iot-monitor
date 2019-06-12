@@ -3,10 +3,6 @@
 wget -q https://s3.amazonaws.com/amazoncloudwatch-agent/redhat/amd64/latest/amazon-cloudwatch-agent.rpm
 sudo rpm -U ./amazon-cloudwatch-agent.rpm
 
-mkdir -p ~/.aws
-cp credentials ~/.aws/credentials
-chmod 600 ~/.aws/credentials
-
 cat config-file-template.json | "s/container-test-1/${1}/g" > config-file.json
 
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
