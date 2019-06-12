@@ -22,8 +22,7 @@
           },
           "disk": {
             "resources": [
-              "/",
-              "/tmp"
+              "/"
             ],
             "measurement": [
               {"name": "free", "rename": "DISK_FREE", "unit": "Gigabytes"},
