@@ -10,7 +10,7 @@ cat config-file-template.json | sed "s/container-test-1/${1}/g" > /opt/aws/amazo
 cp credentials /opt/aws/amazon-cloudwatch-agent/etc/
 
 echo "[credentials]
-    shared_credential_file = \"/opt/aws/amazon-cloudwatch-agent/etc/\"
+    shared_credential_file = \"/opt/aws/amazon-cloudwatch-agent/etc/credentials\"
 " > /opt/aws/amazon-cloudwatch-agent/etc/common-config.toml
 
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
