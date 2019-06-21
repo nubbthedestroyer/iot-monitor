@@ -134,7 +134,7 @@
                 "log_group_name": "indaflow-container-test-1",
                 "log_stream_name": "/home/dlc/FelohLightYear/netCore/Feloh.DlcListenerDaemon/logs.txt",
                 "timezone": "UTC"
-              }
+              }K
             ]
           }
         },
